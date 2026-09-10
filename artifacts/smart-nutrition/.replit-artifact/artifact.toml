@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Smart Nutrition"
+description = "Sitio web premium para un Networker de Herbalife Nutrition: tarjeta digital, oportunidad de negocio, catálogo de bienestar y contacto contextual por WhatsApp."
+version = "1.0.0"
+id = "artifacts/smart-nutrition"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20003
+
+[services.development]
+run = "pnpm --filter @workspace/smart-nutrition run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/smart-nutrition", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/smart-nutrition/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20003"
+BASE_PATH = "/"

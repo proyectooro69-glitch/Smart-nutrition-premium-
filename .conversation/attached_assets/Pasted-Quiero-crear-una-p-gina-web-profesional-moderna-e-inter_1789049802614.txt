@@ -1,0 +1,478 @@
+Quiero crear una página web profesional, moderna e interactiva para un Networker de Herbalife Nutrition.
+
+IMPORTANTE:
+No quiero una copia del sitio oficial de Herbalife ni una simple reproducción del catálogo PDF.
+Quiero utilizar como REFERENCIA visual y de organización el catálogo de productos Herbalife 2024:
+https://viewer.ipaper.io/herbalife-nutrition/catalogoherbalife2024/catalogoherbalife/?page=2
+
+También toma como referencia la organización actual de productos de Herbalife México:
+https://www.herbalife.com/es-mx
+
+La web debe funcionar como una combinación de:
+
+1. TARJETA DIGITAL PERSONAL
+2. PRESENTACIÓN PROFESIONAL DEL NETWORKER
+3. CATÁLOGO INTERACTIVO DE PRODUCTOS
+4. PRESENTACIÓN DE LA OPORTUNIDAD DE NEGOCIO
+5. CONTACTO DIRECTO POR WHATSAPP
+
+==================================================
+IDENTIDAD VISUAL
+==================================================
+
+Utiliza como identidad principal:
+
+- Azul marino profundo
+- Negro elegante
+- Blanco
+- Plata metálica
+- Pequeños detalles dorados
+- Efectos de iluminación muy sutiles
+- Apariencia premium, corporativa y moderna
+
+NO utilizar colores chillones.
+NO utilizar un diseño infantil.
+NO utilizar demasiadas animaciones.
+NO llenar la página de elementos innecesarios.
+
+La estética debe transmitir:
+
+CONFIANZA
+PROFESIONALISMO
+SALUD
+BIENESTAR
+OPORTUNIDAD
+TECNOLOGÍA
+EXCLUSIVIDAD
+
+La imagen principal disponible muestra a un hombre profesional, sonriente, vestido con traje azul marino, junto al logotipo circular:
+
+“HAVANA-GUADALAJARA”
+“SMART NUTRITION”
+
+UTILIZA ESA IMAGEN COMO ELEMENTO PRINCIPAL DE LA IDENTIDAD.
+
+El hombre debe aparecer de forma profesional y elegante.
+No modificar innecesariamente su rostro, vestimenta ni apariencia.
+
+==================================================
+PÁGINA PRINCIPAL
+==================================================
+
+La página de inicio debe parecer una TARJETA DE PRESENTACIÓN DIGITAL PREMIUM.
+
+En la parte superior:
+
+[LOGO SMART NUTRITION]
+
+Imagen profesional del Networker.
+
+Debajo:
+
+NETWORKER
+
+HERBALIFE NUTRITION
+
+Y una frase corta:
+
+“Salud • Bienestar • Oportunidad”
+
+o una frase equivalente, elegante y profesional.
+
+NO colocar demasiado texto.
+
+La página debe estar diseñada primero para teléfonos móviles, pero debe verse perfectamente en computadora y tablet.
+
+==================================================
+BOTONES PRINCIPALES
+==================================================
+
+Debajo de la presentación deben aparecer solamente tres grandes botones interactivos:
+
+1. INGRESOS DESDE CASA
+
+2. SALUD Y BIENESTAR
+
+3. MI WHATSAPP
+
+Los botones deben tener el mismo estilo visual de la tarjeta:
+
+- Fondo azul marino/negro
+- Bordes metálicos plateados
+- Detalles dorados
+- Iconos elegantes
+- Efecto hover muy discreto
+- Flecha indicando que son interactivos
+
+No hacer botones pequeños.
+
+==================================================
+BOTÓN 1: INGRESOS DESDE CASA
+==================================================
+
+Al pulsar:
+
+“INGRESOS DESDE CASA”
+
+debe abrir una página independiente dentro del mismo sitio.
+
+Título:
+
+INGRESOS DESDE CASA
+
+Subtítulo:
+
+“Descubre una forma flexible de desarrollar una actividad independiente desde cualquier lugar.”
+
+La página debe explicar de manera clara y profesional:
+
+- Qué es la actividad de Networker / Distribuidor Independiente.
+- Cómo funciona el modelo de negocio.
+- Cómo se pueden generar ingresos mediante la venta de productos.
+- Qué significa construir una red de clientes.
+- Qué tipo de acompañamiento puede recibir una persona que comienza.
+- Flexibilidad de horarios.
+- Posibilidad de desarrollar la actividad desde casa.
+- Pasos generales para conocer la oportunidad.
+
+IMPORTANTE:
+
+NO prometer ingresos.
+NO decir que una persona se hará rica.
+NO utilizar frases como “gana $5,000 al mes garantizados”.
+NO utilizar afirmaciones engañosas.
+
+La comunicación debe ser profesional y transparente.
+
+Agregar una sección:
+
+“¿Cómo comenzar?”
+
+Paso 1 — Conoce la oportunidad
+Paso 2 — Conoce los productos
+Paso 3 — Decide si esta actividad es para ti
+Paso 4 — Recibe orientación personalizada
+
+Al final:
+
+BOTÓN GRANDE:
+
+“QUIERO CONOCER LA OPORTUNIDAD”
+
+Este botón debe abrir WhatsApp.
+
+==================================================
+BOTÓN 2: SALUD Y BIENESTAR
+==================================================
+
+Al pulsar:
+
+“SALUD Y BIENESTAR”
+
+abrir un CATÁLOGO INTERACTIVO.
+
+No quiero mostrar un PDF directamente.
+
+Quiero una experiencia de catálogo moderna.
+
+Crear categorías visuales:
+
+- BATIDOS Y NUTRICIÓN
+- TÉS Y BEBIDAS
+- PROTEÍNAS Y SNACKS
+- VITAMINAS Y SUPLEMENTOS
+- NUTRICIÓN DEPORTIVA
+- HIDRATACIÓN
+- CUIDADO PERSONAL
+- OTROS PRODUCTOS DISPONIBLES
+
+Estas categorías deben estar inspiradas en la organización del catálogo de referencia y en la estructura actual de Herbalife México.
+
+El sitio oficial actualmente presenta categorías como Batidos, Snacks, Tés y Bebidas, Vitaminas y Suplementos y Cuidado Personal. También organiza productos según objetivos de nutrición y bienestar.
+
+==================================================
+FICHAS DE PRODUCTOS
+==================================================
+
+Cada producto debe aparecer como una tarjeta.
+
+Cada tarjeta debe contener:
+
+- Imagen del producto
+- Nombre
+- Descripción breve
+- Categoría
+- Ingredientes destacados, únicamente cuando estén disponibles en información oficial
+- Características nutricionales relevantes
+- Forma de uso, cuando corresponda
+- Botón:
+
+“CONSULTAR POR WHATSAPP”
+
+NO inventar ingredientes.
+
+NO inventar propiedades.
+
+NO decir que un producto cura enfermedades.
+
+NO hacer afirmaciones médicas.
+
+NO utilizar frases como:
+
+“cura la diabetes”
+“elimina la hipertensión”
+“cura el colesterol”
+“adelgaza garantizado”
+“sustituye medicamentos”
+
+Si se describen beneficios, deben utilizarse únicamente afirmaciones permitidas y respaldadas por la información oficial del producto.
+
+Agregar una nota de seguridad/disclaimer apropiada:
+
+“Los productos no están destinados a diagnosticar, tratar, curar o prevenir enfermedades. Consulta la etiqueta del producto y, si tienes alguna condición médica o tomas medicamentos, consulta con un profesional de la salud.”
+
+==================================================
+FICHA INDIVIDUAL DE PRODUCTO
+==================================================
+
+Al pulsar un producto, abrir una ficha más completa.
+
+Diseño:
+
+Imagen grande del producto
+
+NOMBRE DEL PRODUCTO
+
+Descripción
+
+¿QUÉ ES?
+
+INGREDIENTES / INFORMACIÓN NUTRICIONAL
+
+¿CÓMO SE UTILIZA?
+
+CARACTERÍSTICAS
+
+Botón:
+
+“PREGUNTAR POR ESTE PRODUCTO EN WHATSAPP”
+
+Al pulsarlo debe abrir WhatsApp con un mensaje preparado.
+
+Ejemplo:
+
+“Hola Adrian, estoy interesado en obtener información sobre [NOMBRE DEL PRODUCTO]. ¿Podrías orientarme?”
+
+==================================================
+BOTÓN 3: MI WHATSAPP
+==================================================
+
+El botón:
+
+“MI WHATSAPP”
+
+debe abrir directamente:
+
+https://wa.me/523329482640
+
+con el siguiente mensaje precargado:
+
+“Hola Adrian, estoy interesado en contactar contigo para conocer más sobre la oportunidad de negocio, así como sobre los productos de salud y bienestar de Herbalife Nutrition. Me gustaría recibir información.”
+
+IMPORTANTE:
+
+El enlace debe funcionar correctamente desde teléfonos.
+
+==================================================
+WHATSAPP CONTEXTUAL
+==================================================
+
+No utilizar siempre el mismo mensaje.
+
+Cada botón debe poder generar un mensaje específico.
+
+Ejemplo desde oportunidad:
+
+“Hola Adrian, estoy interesado en conocer más sobre la oportunidad de negocio de Herbalife Nutrition. ¿Podrías brindarme información?”
+
+Ejemplo desde producto:
+
+“Hola Adrian, estoy interesado en conocer más sobre [PRODUCTO]. ¿Podrías brindarme información?”
+
+Esto permite saber desde qué sección llegó cada persona.
+
+==================================================
+SECCIÓN SOBRE EL NETWORKER
+==================================================
+
+Agregar una pequeña sección:
+
+SOBRE MÍ
+
+Presentar al Networker de manera profesional.
+
+No hacer una biografía demasiado larga.
+
+Debe transmitir:
+
+- Atención personalizada
+- Orientación
+- Experiencia
+- Acompañamiento
+- Compromiso con el bienestar
+
+Agregar nuevamente:
+
+“CONTACTAR POR WHATSAPP”
+
+==================================================
+DISEÑO DE LA NAVEGACIÓN
+==================================================
+
+La navegación debe ser extremadamente sencilla.
+
+Menú:
+
+INICIO
+INGRESOS DESDE CASA
+SALUD Y BIENESTAR
+WHATSAPP
+
+En móvil utilizar un menú hamburguesa elegante.
+
+Agregar un botón flotante de WhatsApp en la esquina inferior derecha.
+
+==================================================
+EXPERIENCIA DE USUARIO
+==================================================
+
+La página debe ser rápida.
+
+No utilizar videos pesados innecesariamente.
+
+No utilizar animaciones excesivas.
+
+Las transiciones deben ser suaves.
+
+Los botones deben sentirse claramente clicables.
+
+Debe ser completamente responsive.
+
+Debe funcionar correctamente en:
+
+- Android
+- iPhone
+- Chrome
+- Edge
+- Safari
+- Computadoras portátiles
+- Tablets
+
+==================================================
+ADMINISTRACIÓN DEL CATÁLOGO
+==================================================
+
+Si la plataforma lo permite, crear una pequeña zona privada de administración.
+
+NO quiero que los visitantes tengan que crear cuentas.
+
+SOLAMENTE el administrador debe poder acceder.
+
+Desde el administrador quiero poder:
+
+- Agregar producto
+- Editar producto
+- Eliminar producto
+- Cambiar imagen
+- Cambiar descripción
+- Cambiar ingredientes
+- Cambiar características
+- Cambiar categoría
+- Activar/desactivar producto
+
+También quiero poder modificar:
+
+- Número de WhatsApp
+- Mensaje inicial de WhatsApp
+- Nombre del Networker
+- Texto de presentación
+
+La administración debe estar separada de la página pública.
+
+==================================================
+IMPORTANTE SOBRE LOS PRODUCTOS
+==================================================
+
+No quiero cargar automáticamente productos inventados.
+
+Utiliza el catálogo de referencia únicamente como orientación.
+
+Cuando se incorporen productos reales:
+
+- Mantener nombre correcto
+- Mantener presentación correcta
+- Utilizar información oficial
+- No inventar ingredientes
+- No inventar beneficios
+- No inventar precios
+
+Si no existe información confiable sobre un dato, dejarlo pendiente para que el administrador pueda completarlo.
+
+==================================================
+ESTRUCTURA FINAL
+==================================================
+
+HOME
+│
+├── INGRESOS DESDE CASA
+│   ├── Qué es
+│   ├── Cómo funciona
+│   ├── Cómo comenzar
+│   ├── Preguntas frecuentes
+│   └── WhatsApp
+│
+├── SALUD Y BIENESTAR
+│   ├── Categorías
+│   ├── Productos
+│   ├── Ficha de producto
+│   └── WhatsApp
+│
+└── MI WHATSAPP
+    └── Conversación directa
+
+==================================================
+RESULTADO QUE QUIERO
+==================================================
+
+Quiero que el resultado NO parezca una plantilla genérica.
+
+Debe parecer una plataforma profesional creada específicamente para este Networker.
+
+Debe tener aspecto de:
+
+“tarjeta digital premium + catálogo de bienestar + página de oportunidad de negocio”.
+
+Debe mantener coherencia visual absoluta con la imagen del hombre y el logotipo Smart Nutrition que estoy proporcionando.
+
+La prioridad es:
+
+1. DISEÑO PREMIUM
+2. FACILIDAD DE USO
+3. WHATSAPP
+4. CATÁLOGO
+5. OPORTUNIDAD DE NEGOCIO
+6. VELOCIDAD
+7. RESPONSIVE
+8. ADMINISTRACIÓN SIMPLE
+
+NO agregar secciones innecesarias.
+
+NO crear una página interminable.
+
+NO obligar al visitante a registrarse.
+
+NO utilizar precios si no han sido proporcionados.
+
+NO inventar información de productos.
+
+Primero crea la estructura y el diseño completo de la web y después prepara el contenido de ejemplo utilizando únicamente información verificable.
