@@ -27,28 +27,28 @@
 }
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 152 30% 12%;
-  --border: 150 20% 88%;
-  --input: 150 20% 88%;
-  --ring: 152 75% 27%;
+  --background: 155 55% 9%;
+  --foreground: 0 0% 100%;
+  --border: 155 30% 20%;
+  --input: 155 30% 20%;
+  --ring: 150 60% 55%;
   --card: 0 0% 100%;
   --card-foreground: 152 30% 12%;
-  --primary: 152 75% 27%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 150 30% 95%;
-  --secondary-foreground: 152 30% 12%;
-  --muted: 150 25% 96%;
-  --muted-foreground: 152 12% 40%;
-  --accent: 152 75% 27%;
-  --accent-foreground: 0 0% 100%;
+  --primary: 150 60% 55%;
+  --primary-foreground: 155 55% 9%;
+  --secondary: 155 45% 14%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 155 40% 15%;
+  --muted-foreground: 150 25% 78%;
+  --accent: 150 60% 55%;
+  --accent-foreground: 155 55% 9%;
   --destructive: 2 55% 46%;
   --destructive-foreground: 0 0% 100%;
   --app-font-sans: 'DM Sans', sans-serif;
   --app-font-serif: 'Playfair Display', serif;
   --app-font-mono: 'Manrope', sans-serif;
   --radius: 0.7rem;
-  --shadow: 0 20px 55px rgba(0, 0, 0, .1);
+  --shadow: 0 20px 55px rgba(0, 0, 0, .3);
   --tracking-normal: 0em;
 }
 
@@ -70,8 +70,8 @@ a { color: inherit; text-decoration: none; }
   min-height: 100dvh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 82% 0%, hsl(150 55% 92% / .8), transparent 32rem),
-    linear-gradient(180deg, #ffffff, #f6fbf8 56%, #ffffff);
+    radial-gradient(circle at 82% 0%, hsl(150 45% 18% / .9), transparent 32rem),
+    linear-gradient(180deg, #062815, #06301c 56%, #052013);
 }
 .grain::after {
   content: "";
@@ -85,11 +85,11 @@ a { color: inherit; text-decoration: none; }
 }
 .font-display { font-family: var(--app-font-serif); }
 .font-caps { letter-spacing: .14em; text-transform: uppercase; }
-.gold-line { background: linear-gradient(90deg, hsl(var(--primary)), hsl(150 60% 45%), transparent); }
+.gold-line { background: linear-gradient(90deg, hsl(var(--primary)), hsl(150 70% 65%), transparent); }
 .glass {
   background: linear-gradient(135deg, #ffffff, #f2f9f5);
-  border: 1px solid hsl(152 40% 85%);
-  box-shadow: 0 22px 60px hsl(152 40% 20% / .08);
+  border: 1px solid #e3f0e8;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, .28);
   backdrop-filter: blur(16px);
 }
 .hero-image {
