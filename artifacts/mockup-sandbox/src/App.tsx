@@ -1,5 +1,5 @@
 import React from "react";
-// Importa la vista principal directamente desde la carpeta de artifacts
+// Importa la app real desde la carpeta smart-nutrition
 import MainApp from "../../smart-nutrition/src/App";
 
 function App() {
