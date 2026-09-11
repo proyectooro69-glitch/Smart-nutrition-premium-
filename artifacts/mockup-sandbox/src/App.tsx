@@ -1,6 +1,6 @@
 import React from "react";
-// Importamos la app principal desde la carpeta lib
-import MainApp from "../../../lib/index"; 
+// Importa la vista principal directamente desde la carpeta de artifacts
+import MainApp from "../../smart-nutrition/src/App";
 
 function App() {
   return <MainApp />;
