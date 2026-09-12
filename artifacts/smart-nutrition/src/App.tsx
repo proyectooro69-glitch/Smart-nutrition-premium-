@@ -16,10 +16,12 @@ const fotoCiencias = '/historia-ciencias.jpg';
 const fotoHerbalife = '/historia-herbalife.jpg';
 const testimonioReto = '/testimonio-reto5semanas.jpg';
 const leafLogo = '/leaf-logo.jpg';
-const productoLinea = '/producto-linea.jpg';
 const productoProteina = '/producto-proteina.jpg';
 const productoLiftoff = '/producto-liftoff.jpg';
 const productoBatido = '/producto-batido.jpg';
+const productoTe = '/producto-te.jpg';
+const productoAloe = '/producto-aloe.jpg';
+const productoBannerActivo = '/producto-banner-activo.jpg';
 const productoKit = '/producto-kit.jpg';
 const respaldoCofepris = '/respaldo-cofepris.jpg';
 const respaldoNfs = '/respaldo-nfs.jpg';
@@ -225,12 +227,16 @@ function Home() {
         </section>
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
+          <div className="mb-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
+            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-40 w-full object-cover sm:h-56" data-testid="img-producto-banner-activo" />
+          </div>
           <div className="max-w-xl"><Eyebrow>Nuestros productos</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Nutrición para cada<br /><em className="not-italic text-[#0d7a3f]">etapa de tu día.</em></h2><p className="mt-5 text-sm leading-6 text-[#5b6b62]">Explora las categorías y escríbeme para conocer disponibilidad, precio y la combinación ideal para tu objetivo.</p></div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <ProductCard image={productoBatido} title="Batidos y control de peso" text="Nutrición balanceada en pocas calorías, para reemplazar una comida sin dejar de nutrirte." message="Hola Adrian, quiero información sobre los batidos y control de peso." testId="card-producto-batidos" />
             <ProductCard image={productoProteina} title="Proteína y desarrollo muscular" text="Apoya la recuperación y el desarrollo muscular después de entrenar." message="Hola Adrian, quiero información sobre los productos de proteína." testId="card-producto-proteina" />
             <ProductCard image={productoLiftoff} title="Energía y rendimiento" text="Un impulso natural de energía para tu día o tu rutina de entrenamiento." message="Hola Adrian, quiero información sobre los productos de energía (Té, LiftOff, N-R-G)." testId="card-producto-energia" />
-            <ProductCard image={productoLinea} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-producto-bienestar" />
+            <ProductCard image={productoTe} title="Té e hidratación" text="Una opción refrescante para acompañar tu día y mantenerte hidratado." message="Hola Adrian, quiero información sobre el té Herbalife." testId="card-producto-te" />
+            <ProductCard image={productoAloe} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-producto-bienestar" />
           </div>
           <p className="mt-6 text-xs text-[#5b6b62]">Consulta precio y disponibilidad directamente por WhatsApp.</p>
 
@@ -307,11 +313,11 @@ function PathwayCard({ number, icon, title, text, href, external = false, testId
 
 function ProductCard({ image, title, text, message, testId }: { image: string; title: string; text: string; message: string; testId: string }) {
   return (
-    <a href={whatsappHref(message)} target="_blank" rel="noreferrer" data-testid={testId} className="group flex flex-col overflow-hidden rounded-[1.25rem] border border-[#e3f0e8] bg-white shadow-[0_10px_30px_rgba(6,48,28,.05)] transition-transform duration-300 hover:-translate-y-1">
-      <div className="h-40 overflow-hidden"><img src={image} alt={title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div>
+    <a href={whatsappHref(message)} target="_blank" rel="noreferrer" data-testid={testId} className="group flex flex-col overflow-hidden rounded-[1.25rem] border border-[#0d7a3f]/25 bg-[#eafbf1] shadow-[0_10px_30px_rgba(6,48,28,.07)] transition-transform duration-300 hover:-translate-y-1">
+      <div className="flex h-48 items-center justify-center overflow-hidden bg-white p-3"><img src={image} alt={title} className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105" /></div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-sm font-bold text-[#16241c]">{title}</h3>
-        <p className="mt-2 flex-1 text-xs leading-5 text-[#5b6b62]">{text}</p>
+        <p className="mt-2 flex-1 text-xs leading-5 text-[#3f5b4c]">{text}</p>
         <span className="mt-4 flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.1em] text-[#0d7a3f]">Preguntar por WhatsApp <ArrowUpRight size={13} /></span>
       </div>
     </a>
@@ -397,11 +403,12 @@ function WellnessPage() {
       </div>
     </section>
     <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProductCard image={productoBatido} title="Batidos y control de peso" text="Nutrición balanceada en pocas calorías, para reemplazar una comida sin dejar de nutrirte." message="Hola Adrian, quiero información sobre los batidos y control de peso." testId="card-wellness-batidos" />
         <ProductCard image={productoProteina} title="Proteína y desarrollo muscular" text="Apoya la recuperación y el desarrollo muscular después de entrenar." message="Hola Adrian, quiero información sobre los productos de proteína." testId="card-wellness-proteina" />
         <ProductCard image={productoLiftoff} title="Energía y rendimiento" text="Un impulso natural de energía para tu día o tu rutina de entrenamiento." message="Hola Adrian, quiero información sobre los productos de energía (Té, LiftOff, N-R-G)." testId="card-wellness-energia" />
-        <ProductCard image={productoLinea} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-wellness-bienestar" />
+        <ProductCard image={productoTe} title="Té e hidratación" text="Una opción refrescante para acompañar tu día y mantenerte hidratado." message="Hola Adrian, quiero información sobre el té Herbalife." testId="card-wellness-te" />
+        <ProductCard image={productoAloe} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-wellness-bienestar" />
       </div>
       <div className="mt-10 flex flex-wrap gap-3"><GoldButton externalHref={catalogueUrl} testId="link-wellness-catalogue">Ver catálogo completo</GoldButton><GoldButton message="Hola Adrian, quiero hablar sobre salud y bienestar." testId="link-wellness-whatsapp" secondary>Preguntar por WhatsApp</GoldButton></div>
     </section>
