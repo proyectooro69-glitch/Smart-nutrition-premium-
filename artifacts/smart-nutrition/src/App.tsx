@@ -185,7 +185,7 @@ function Home() {
                 <p className="font-display text-lg italic text-[#0d7a3f]">Esta es mi historia. Y quizás el próximo capítulo pueda comenzar contigo.</p>
               </div>
             </div>
-            <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)] lg:sticky lg:top-24">
+            <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)] lg:mt-16">
               <img src={adrianTrajeBeige} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-auto w-full object-cover" data-testid="img-adrian-hero" />
             </div>
           </div>
