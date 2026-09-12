@@ -204,7 +204,7 @@ function Home() {
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
           <div className="mb-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
-            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-56 w-full object-cover object-top sm:h-80" data-testid="img-producto-banner-activo" />
+            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-56 w-full object-cover object-right-top sm:h-80 sm:object-top" data-testid="img-producto-banner-activo" />
           </div>
           <div className="max-w-xl"><Eyebrow>Nuestros productos</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Nutrición para cada<br /><em className="not-italic text-[#0d7a3f]">etapa de tu día.</em></h2><p className="mt-5 text-sm leading-6 text-[#5b6b62]">Explora las categorías y escríbeme para conocer disponibilidad, precio y la combinación ideal para tu objetivo.</p></div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
