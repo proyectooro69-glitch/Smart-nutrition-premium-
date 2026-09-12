@@ -187,7 +187,7 @@ function Home() {
               </div>
             </div>
             <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)] lg:sticky lg:top-24">
-              <img src={adrianTrajeBeige} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-[460px] w-full object-cover object-top sm:h-[560px]" data-testid="img-adrian-hero" />
+              <img src={adrianTrajeBeige} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-auto w-full object-cover" data-testid="img-adrian-hero" />
             </div>
           </div>
         </section>
@@ -204,24 +204,29 @@ function Home() {
         </section>
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
-          <div className="max-w-xl"><Eyebrow>Respaldo y calidad</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Tu confianza es lo<br /><em className="not-italic text-[#0d7a3f]">más importante.</em></h2></div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            <TrustCard image={respaldoNfs} icon={<BadgeCheck size={20} />} title="Certificación NSF" text="Nuestros productos están certificados por la Fundación Nacional para la Ciencia (NSF), que avala el cumplimiento de estrictos controles de calidad." />
-            <TrustCard image={respaldoCofepris} icon={<ShieldCheck size={20} />} title="Aprobado por COFEPRIS y FDA" text="Los ingredientes de nuestros productos están aprobados por la Comisión Federal para la Protección contra Riesgos Sanitarios y la FDA de Estados Unidos." />
-            <TrustCard image={respaldoLab} icon={<FlaskConical size={20} />} title="Respaldo científico" text="Nuestra fórmula insignia está respaldada por el Consejo Consultor de Nutrición, conformado por expertos en nutrición, ciencia y salud." />
+          <div className="mb-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
+            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-56 w-full object-cover object-top sm:h-80" data-testid="img-producto-banner-activo" />
           </div>
-          <div className="mt-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
-            <div className="relative">
-              <img src={marcaHerbalife} alt="Identidad de marca Herbalife Nutrition" className="h-72 w-full object-cover sm:h-[30rem]" data-testid="img-marca-herbalife" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#052013]/90 via-[#052013]/20 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
-                <p className="font-caps text-[10px] font-bold text-[#7be3a0]">¿Y si tú también construyes algo así?</p>
-                <h3 className="mt-2 max-w-lg font-display text-2xl leading-tight text-white sm:text-3xl">Este es el tipo de negocio que puedes construir con Herbalife Nutrition.</h3>
-                <div className="mt-5"><GoldButton href="/ingresos-desde-casa" testId="link-marca-oportunidad">Conocer la oportunidad</GoldButton></div>
-              </div>
+          <div className="max-w-xl"><Eyebrow>Nuestros productos</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Nutrición para cada<br /><em className="not-italic text-[#0d7a3f]">etapa de tu día.</em></h2><p className="mt-5 text-sm leading-6 text-[#5b6b62]">Explora las categorías y escríbeme para conocer disponibilidad, precio y la combinación ideal para tu objetivo.</p></div>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ProductCard image={productoBatido} title="Batidos y control de peso" text="Nutrición balanceada en pocas calorías, para reemplazar una comida sin dejar de nutrirte." message="Hola Adrian, quiero información sobre los batidos y control de peso." testId="card-producto-batidos" />
+            <ProductCard image={productoProteina} title="Proteína y desarrollo muscular" text="Apoya la recuperación y el desarrollo muscular después de entrenar." message="Hola Adrian, quiero información sobre los productos de proteína." testId="card-producto-proteina" />
+            <ProductCard image={productoLiftoff} title="Energía y rendimiento" text="Un impulso natural de energía para tu día o tu rutina de entrenamiento." message="Hola Adrian, quiero información sobre los productos de energía (Té, LiftOff, N-R-G)." testId="card-producto-energia" />
+            <ProductCard image={productoTe} title="Té e hidratación" text="Una opción refrescante para acompañar tu día y mantenerte hidratado." message="Hola Adrian, quiero información sobre el té Herbalife." testId="card-producto-te" />
+            <ProductCard image={productoShakeDeportistas} title="Shake proteico para deportistas" text="19g de proteína por porción, ideal para antes o después de entrenar." message="Hola Adrian, quiero información sobre el shake proteico para deportistas." testId="card-producto-deportistas" />
+            <ProductCard image={productoAloe} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-producto-bienestar" />
+          </div>
+          <p className="mt-6 text-xs text-[#5b6b62]">Consulta precio y disponibilidad directamente por WhatsApp.</p>
+
+          <div className="mt-16 grid items-center gap-8 overflow-hidden rounded-[2rem] border border-[#e3f0e8] bg-white lg:grid-cols-2">
+            <img src={productoKit} alt="Kit Herbalife: malteada, té N-R-G, mochila, cuchara y catálogo" className="h-64 w-full object-cover lg:h-full" data-testid="img-kit-herbalife" />
+            <div className="p-8 lg:p-12">
+              <Eyebrow>Kit de inicio</Eyebrow>
+              <h3 className="font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">Empieza tu transformación <em className="not-italic text-[#0d7a3f]">hoy.</em></h3>
+              <p className="mt-4 max-w-md text-sm leading-6 text-[#4b5b52]">Incluye malteada, té de guaraná N-R-G, catálogo, cuchara y credencial — todo lo que necesitas para dar el primer paso.</p>
+              <div className="mt-7"><GoldButton message="Hola Adrian, quiero información sobre el Kit de inicio Herbalife." testId="link-kit-whatsapp">Preguntar por el kit</GoldButton></div>
             </div>
           </div>
-          <p className="mt-3 text-xs text-[#5b6b62]">Imagen de referencia de la identidad de marca global Herbalife Nutrition.</p>
         </section>
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
@@ -257,29 +262,24 @@ function Home() {
         </section>
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
-          <div className="mb-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
-            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-56 w-full object-cover object-top sm:h-80" data-testid="img-producto-banner-activo" />
+          <div className="max-w-xl"><Eyebrow>Respaldo y calidad</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Tu confianza es lo<br /><em className="not-italic text-[#0d7a3f]">más importante.</em></h2></div>
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <TrustCard image={respaldoNfs} icon={<BadgeCheck size={20} />} title="Certificación NSF" text="Nuestros productos están certificados por la Fundación Nacional para la Ciencia (NSF), que avala el cumplimiento de estrictos controles de calidad." />
+            <TrustCard image={respaldoCofepris} icon={<ShieldCheck size={20} />} title="Aprobado por COFEPRIS y FDA" text="Los ingredientes de nuestros productos están aprobados por la Comisión Federal para la Protección contra Riesgos Sanitarios y la FDA de Estados Unidos." />
+            <TrustCard image={respaldoLab} icon={<FlaskConical size={20} />} title="Respaldo científico" text="Nuestra fórmula insignia está respaldada por el Consejo Consultor de Nutrición, conformado por expertos en nutrición, ciencia y salud." />
           </div>
-          <div className="max-w-xl"><Eyebrow>Nuestros productos</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Nutrición para cada<br /><em className="not-italic text-[#0d7a3f]">etapa de tu día.</em></h2><p className="mt-5 text-sm leading-6 text-[#5b6b62]">Explora las categorías y escríbeme para conocer disponibilidad, precio y la combinación ideal para tu objetivo.</p></div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <ProductCard image={productoBatido} title="Batidos y control de peso" text="Nutrición balanceada en pocas calorías, para reemplazar una comida sin dejar de nutrirte." message="Hola Adrian, quiero información sobre los batidos y control de peso." testId="card-producto-batidos" />
-            <ProductCard image={productoProteina} title="Proteína y desarrollo muscular" text="Apoya la recuperación y el desarrollo muscular después de entrenar." message="Hola Adrian, quiero información sobre los productos de proteína." testId="card-producto-proteina" />
-            <ProductCard image={productoLiftoff} title="Energía y rendimiento" text="Un impulso natural de energía para tu día o tu rutina de entrenamiento." message="Hola Adrian, quiero información sobre los productos de energía (Té, LiftOff, N-R-G)." testId="card-producto-energia" />
-            <ProductCard image={productoTe} title="Té e hidratación" text="Una opción refrescante para acompañar tu día y mantenerte hidratado." message="Hola Adrian, quiero información sobre el té Herbalife." testId="card-producto-te" />
-            <ProductCard image={productoShakeDeportistas} title="Shake proteico para deportistas" text="19g de proteína por porción, ideal para antes o después de entrenar." message="Hola Adrian, quiero información sobre el shake proteico para deportistas." testId="card-producto-deportistas" />
-            <ProductCard image={productoAloe} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-producto-bienestar" />
-          </div>
-          <p className="mt-6 text-xs text-[#5b6b62]">Consulta precio y disponibilidad directamente por WhatsApp.</p>
-
-          <div className="mt-16 grid items-center gap-8 overflow-hidden rounded-[2rem] border border-[#e3f0e8] bg-white lg:grid-cols-2">
-            <img src={productoKit} alt="Kit Herbalife: malteada, té N-R-G, mochila, cuchara y catálogo" className="h-64 w-full object-cover lg:h-full" data-testid="img-kit-herbalife" />
-            <div className="p-8 lg:p-12">
-              <Eyebrow>Kit de inicio</Eyebrow>
-              <h3 className="font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">Empieza tu transformación <em className="not-italic text-[#0d7a3f]">hoy.</em></h3>
-              <p className="mt-4 max-w-md text-sm leading-6 text-[#4b5b52]">Incluye malteada, té de guaraná N-R-G, catálogo, cuchara y credencial — todo lo que necesitas para dar el primer paso.</p>
-              <div className="mt-7"><GoldButton message="Hola Adrian, quiero información sobre el Kit de inicio Herbalife." testId="link-kit-whatsapp">Preguntar por el kit</GoldButton></div>
+          <div className="mt-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
+            <div className="relative">
+              <img src={marcaHerbalife} alt="Identidad de marca Herbalife Nutrition" className="h-72 w-full object-cover sm:h-[30rem]" data-testid="img-marca-herbalife" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#052013]/90 via-[#052013]/20 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
+                <p className="font-caps text-[10px] font-bold text-[#7be3a0]">¿Y si tú también construyes algo así?</p>
+                <h3 className="mt-2 max-w-lg font-display text-2xl leading-tight text-white sm:text-3xl">Este es el tipo de negocio que puedes construir con Herbalife Nutrition.</h3>
+                <div className="mt-5"><GoldButton href="/ingresos-desde-casa" testId="link-marca-oportunidad">Conocer la oportunidad</GoldButton></div>
+              </div>
             </div>
           </div>
+          <p className="mt-3 text-xs text-[#5b6b62]">Imagen de referencia de la identidad de marca global Herbalife Nutrition.</p>
         </section>
 
 
