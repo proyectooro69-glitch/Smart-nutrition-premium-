@@ -333,12 +333,12 @@ function TrustCard({ image, icon, title, text }: { image: string; icon: ReactNod
 
 function TimelineCard({ image, step, title, text }: { image: string; step: string; title: string; text: string }) {
   return (
-    <div className="overflow-hidden rounded-[1.25rem] border border-[#e3f0e8] bg-white shadow-[0_10px_30px_rgba(6,48,28,.05)]">
-      <div className="h-48 overflow-hidden"><img src={image} alt={title} className="h-full w-full object-cover" /></div>
+    <div className="overflow-hidden rounded-[1.25rem] border border-[#0d7a3f]/25 bg-[#f0faf4] shadow-[0_10px_30px_rgba(6,48,28,.06)]">
+      <div className="h-64 overflow-hidden"><img src={image} alt={title} className="h-full w-full object-cover object-top" /></div>
       <div className="p-6">
-        <span className="font-caps text-[10px] text-[#0d7a3f]">{step}</span>
-        <h3 className="mt-2 text-sm font-bold text-[#16241c]">{title}</h3>
-        <p className="mt-2 text-xs leading-5 text-[#5b6b62]">{text}</p>
+        <span className="inline-block rounded-full bg-[#0d7a3f] px-3 py-1 font-caps text-[10px] text-white">{step}</span>
+        <h3 className="mt-3 text-sm font-bold text-[#16241c]">{title}</h3>
+        <p className="mt-2 text-xs leading-5 text-[#3f5b4c]">{text}</p>
       </div>
     </div>
   );
