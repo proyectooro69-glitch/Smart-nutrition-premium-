@@ -274,7 +274,7 @@ function Home() {
               <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
                 <p className="font-caps text-[10px] font-bold text-[#7be3a0]">¿Y si tú también construyes algo así?</p>
                 <h3 className="mt-2 max-w-lg font-display text-2xl leading-tight text-white sm:text-3xl">Este es el tipo de negocio que puedes construir con Herbalife Nutrition.</h3>
-                <div className="mt-5"><GoldButton href="/ingresos-desde-casa" testId="link-marca-oportunidad">Conocer la oportunidad</GoldButton></div>
+                <div className="mt-5"><GoldButton message="Hola Adrian, quiero conocer más sobre cómo ser Asociado Independiente de Herbalife." testId="link-marca-oportunidad">Conocer la oportunidad</GoldButton></div>
               </div>
             </div>
           </div>
