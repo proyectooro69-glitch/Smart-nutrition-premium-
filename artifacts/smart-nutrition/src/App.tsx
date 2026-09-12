@@ -195,7 +195,7 @@ function Home() {
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
           <div className="max-w-xl"><Eyebrow>Elige tu punto de partida</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Dos caminos.<br /><em className="not-italic text-[#0d7a3f]">Una charla honesta.</em></h2></div>
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            <PathwayCard number="01" icon={<HeartHandshake size={22} />} title="Salud y bienestar" text="Explora el catálogo de productos Herbalife Nutrition y conoce sus distintas categorías." href="/salud-y-bienestar" testId="card-pathway-salud" />
+            <PathwayCard number="01" icon={<HeartHandshake size={22} />} title="Salud y bienestar" text="Explora el catálogo interactivo de productos Herbalife Nutrition y conoce sus distintas categorías." href={catalogueUrl} external testId="card-pathway-salud" />
             <PathwayCard number="02" icon={<Compass size={22} />} title="Ingresos desde casa" text="Una introducción a la oportunidad independiente: qué implica, cómo se conversa y por qué la claridad importa." href="/ingresos-desde-casa" testId="card-pathway-ingresos" />
             <a href={whatsappHref(generalWhatsAppMessage)} target="_blank" rel="noreferrer" data-testid="card-pathway-whatsapp" className="group glass relative flex min-h-[265px] flex-col justify-between overflow-hidden rounded-[1.5rem] p-7 transition-transform duration-500 hover:-translate-y-1"><div className="flex items-start justify-between"><span className="font-caps text-[10px] text-[#0d7a3f]">03</span><span className="text-[#0d7a3f]"><MessageCircle size={22} /></span></div><div><h3 className="font-display text-3xl text-[#16241c]">Mi WhatsApp</h3><p className="mt-3 max-w-md text-sm leading-6 text-[#5b6b62]">Escríbeme directamente y cuéntame qué te gustaría conocer. Recibirás una respuesta personal.</p><span className="mt-5 flex items-center gap-2 text-xs font-bold uppercase tracking-[.12em] text-[#0d7a3f]">Iniciar conversación <ArrowRightIcon /></span></div></a>
           </div>
@@ -376,6 +376,26 @@ function PageIntro({ eyebrow, title, copy }: { eyebrow: string; title: ReactNode
 function WellnessPage() {
   return <Layout><Meta title="Salud y bienestar" description="Consulta el catálogo de productos y la orientación personal de Smart Nutrition." /><main>
     <PageIntro eyebrow="Catálogo curado" title={<>Bienestar con<br /><em className="not-italic text-[#0d7a3f]">contexto.</em></>} copy="Explora las categorías de producto y escríbeme directamente para conocer disponibilidad, precio y la combinación ideal para tu objetivo." />
+    <section className="mx-auto max-w-[1240px] px-5 pb-10 lg:px-8">
+      <a href={catalogueUrl} target="_blank" rel="noreferrer" data-testid="link-wellness-catalogue-top" className="group flex flex-col items-start justify-between gap-5 rounded-[1.5rem] border border-[#0d7a3f]/25 bg-[#0d7a3f]/5 p-7 sm:flex-row sm:items-center">
+        <div>
+          <p className="font-caps text-[10px] font-bold text-[#0d7a3f]">Catálogo interactivo</p>
+          <h2 className="mt-2 font-display text-2xl text-[#16241c]">Ábrelo ahora mismo, sin vueltas.</h2>
+        </div>
+        <span className="inline-flex items-center gap-3 rounded-full bg-[#0d7a3f] px-5 py-3 text-[11px] font-bold uppercase tracking-[.14em] text-white transition-all group-hover:-translate-y-0.5 group-hover:bg-[#0a5f31]">Ver catálogo completo<ArrowUpRight size={15} /></span>
+      </a>
+    </section>
+    <section className="mx-auto max-w-[1240px] px-5 pb-10 lg:px-8">
+      <div className="glass overflow-hidden rounded-[2rem] p-3 sm:p-5">
+        <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] bg-white">
+          <video className="aspect-video w-full object-cover" controls preload="metadata" playsInline poster={adrianPhoto} data-testid="video-wellness-explainer"><source src={opportunityVideo} type="video/mp4" />Tu navegador no soporta la reproducción de video.</video>
+        </div>
+        <div className="px-3 pb-3 pt-6 sm:px-4">
+          <Eyebrow>Video explicativo</Eyebrow>
+          <h2 className="max-w-2xl font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">Todo sobre Herbalife Nutrition, explicado directo.</h2>
+        </div>
+      </div>
+    </section>
     <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <ProductCard image={productoBatido} title="Batidos y control de peso" text="Nutrición balanceada en pocas calorías, para reemplazar una comida sin dejar de nutrirte." message="Hola Adrian, quiero información sobre los batidos y control de peso." testId="card-wellness-batidos" />
