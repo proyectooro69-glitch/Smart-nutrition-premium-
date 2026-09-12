@@ -20,6 +20,7 @@ const productoProteina = '/producto-proteina.jpg';
 const productoLiftoff = '/producto-liftoff.jpg';
 const productoBatido = '/producto-batido.jpg';
 const productoTe = '/producto-te.jpg';
+const productoShakeDeportistas = '/producto-shake-deportistas.jpg';
 const productoAloe = '/producto-aloe.jpg';
 const productoBannerActivo = '/producto-banner-activo.jpg';
 const productoKit = '/producto-kit.jpg';
@@ -228,7 +229,7 @@ function Home() {
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
           <div className="mb-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
-            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-40 w-full object-cover sm:h-56" data-testid="img-producto-banner-activo" />
+            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-40 w-full object-cover object-top sm:h-56" data-testid="img-producto-banner-activo" />
           </div>
           <div className="max-w-xl"><Eyebrow>Nuestros productos</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Nutrición para cada<br /><em className="not-italic text-[#0d7a3f]">etapa de tu día.</em></h2><p className="mt-5 text-sm leading-6 text-[#5b6b62]">Explora las categorías y escríbeme para conocer disponibilidad, precio y la combinación ideal para tu objetivo.</p></div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -236,6 +237,7 @@ function Home() {
             <ProductCard image={productoProteina} title="Proteína y desarrollo muscular" text="Apoya la recuperación y el desarrollo muscular después de entrenar." message="Hola Adrian, quiero información sobre los productos de proteína." testId="card-producto-proteina" />
             <ProductCard image={productoLiftoff} title="Energía y rendimiento" text="Un impulso natural de energía para tu día o tu rutina de entrenamiento." message="Hola Adrian, quiero información sobre los productos de energía (Té, LiftOff, N-R-G)." testId="card-producto-energia" />
             <ProductCard image={productoTe} title="Té e hidratación" text="Una opción refrescante para acompañar tu día y mantenerte hidratado." message="Hola Adrian, quiero información sobre el té Herbalife." testId="card-producto-te" />
+            <ProductCard image={productoShakeDeportistas} title="Shake proteico para deportistas" text="19g de proteína por porción, ideal para antes o después de entrenar." message="Hola Adrian, quiero información sobre el shake proteico para deportistas." testId="card-producto-deportistas" />
             <ProductCard image={productoAloe} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-producto-bienestar" />
           </div>
           <p className="mt-6 text-xs text-[#5b6b62]">Consulta precio y disponibilidad directamente por WhatsApp.</p>
@@ -408,6 +410,7 @@ function WellnessPage() {
         <ProductCard image={productoProteina} title="Proteína y desarrollo muscular" text="Apoya la recuperación y el desarrollo muscular después de entrenar." message="Hola Adrian, quiero información sobre los productos de proteína." testId="card-wellness-proteina" />
         <ProductCard image={productoLiftoff} title="Energía y rendimiento" text="Un impulso natural de energía para tu día o tu rutina de entrenamiento." message="Hola Adrian, quiero información sobre los productos de energía (Té, LiftOff, N-R-G)." testId="card-wellness-energia" />
         <ProductCard image={productoTe} title="Té e hidratación" text="Una opción refrescante para acompañar tu día y mantenerte hidratado." message="Hola Adrian, quiero información sobre el té Herbalife." testId="card-wellness-te" />
+        <ProductCard image={productoShakeDeportistas} title="Shake proteico para deportistas" text="19g de proteína por porción, ideal para antes o después de entrenar." message="Hola Adrian, quiero información sobre el shake proteico para deportistas." testId="card-wellness-deportistas" />
         <ProductCard image={productoAloe} title="Bienestar y cuidado personal" text="Apoya la digestión y el bienestar general desde adentro." message="Hola Adrian, quiero información sobre los productos de bienestar y cuidado personal." testId="card-wellness-bienestar" />
       </div>
       <div className="mt-10 flex flex-wrap gap-3"><GoldButton externalHref={catalogueUrl} testId="link-wellness-catalogue">Ver catálogo completo</GoldButton><GoldButton message="Hola Adrian, quiero hablar sobre salud y bienestar." testId="link-wellness-whatsapp" secondary>Preguntar por WhatsApp</GoldButton></div>
