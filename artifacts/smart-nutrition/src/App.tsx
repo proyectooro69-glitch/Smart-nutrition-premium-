@@ -9,6 +9,7 @@ import { Link, Route, Switch, useLocation, useParams, Router as WouterRouter } f
 const queryClient = new QueryClient();
 const adrianPhoto = '/adrian-real.jpg';
 const adrianRutina = '/adrian-rutina.jpg';
+const adrianTrajeBeige = '/adrian-traje-beige.jpg';
 const heroVideo = '/hero-batido.mp4';
 const heroVideoPoster = '/hero-batido-poster.jpg';
 const fotoMilitar = '/historia-militar.jpg';
@@ -173,13 +174,20 @@ function Home() {
               <Eyebrow>Bernard Adrián Neyra Rivery</Eyebrow>
               <h2 className="max-w-lg font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">La persona detrás de <em className="not-italic text-[#0d7a3f]">Smart Nutrition.</em></h2>
               <div className="mt-6 max-w-md space-y-4 text-justify text-sm leading-6 text-[#4b5b52]">
-                <p>Antes de Herbalife, tenía malos hábitos alimenticios y un desconocimiento total acerca de una buena nutrición a nivel celular. Tenía obesidad, y cansancio y falta de energía la mayor parte del tiempo. Soy Ingeniero de Aeronáutica en Cuba y profesor.</p>
-                <p>Conocí Herbalife en México en un Club de Nutrición, me hicieron una evaluación física que me dio 7 parámetros corporales, los cuales no estaban en rangos positivos. Me invitaron a tomar la nutrición y tuve un cambio positivo en mi composición corporal: bajé 6 kilos en 21 días y me sentía con mejor digestión y energía.</p>
-                <p>En cuanto al negocio, me encantó saber que es una actividad que permite dejar herencia, generas ingresos mientras duermes y entre más personas ayudo, más me ayudo yo. Soy dueño de mi tiempo, soy mi propio jefe, y hoy genero ingresos de tres de las cinco maneras que permite la empresa. Entendí que es un negocio internacional. Vamos por el Nivel de Equipo del Presidente.</p>
+                <p className="font-display text-lg italic text-[#0d7a3f]">De buscar una solución para mí a descubrir una nueva forma de vivir.</p>
+                <p>Antes de conocer Herbalife®, mi relación con la alimentación no era la mejor. Tenía malos hábitos alimenticios y poco conocimiento sobre la importancia de una nutrición adecuada. Vivía con obesidad, cansancio y falta de energía durante buena parte del día.</p>
+                <p>Soy Ingeniero en Aeronáutica y profesor, una formación que siempre me ha llevado a buscar respuestas, entender cómo funcionan las cosas y, sobre todo, encontrar maneras de mejorar.</p>
+                <p>Mi historia con Herbalife comenzó en México, cuando conocí un Club de Nutrición. Allí me realizaron una evaluación física que mostró que varios de mis parámetros corporales no se encontraban dentro de los rangos que yo esperaba.</p>
+                <p>Fue entonces cuando decidí probar una nueva forma de complementar mi alimentación. Comencé a consumir los productos de nutrición y, durante los primeros 21 días, experimenté un cambio que para mí fue muy significativo: bajé 6 kilos y empecé a sentirme mejor, con una mejor digestión y más energía para mis actividades diarias.</p>
+                <p>Ese resultado despertó en mí algo más importante que el cambio físico: el interés por aprender. Comencé a conocer más sobre nutrición, bienestar y sobre la posibilidad de ayudar a otras personas a transformar sus propios hábitos. Y entonces descubrí que había mucho más...</p>
+                <p>Al conocer el modelo de negocio, descubrí una oportunidad que iba mucho más allá de consumir productos. Me atrajo especialmente la posibilidad de construir un negocio a largo plazo, desarrollar un equipo, ayudar a más personas y generar ingresos de diferentes maneras dentro de la compañía. También descubrí algo que para mí tiene un enorme valor: la libertad de construir mi propia actividad y administrar mi tiempo.</p>
+                <p>Hoy, además de continuar desarrollando mi proyecto, genero ingresos a través de varias de las formas que contempla el modelo de negocio de Herbalife® y sigo trabajando para alcanzar nuevas metas.</p>
+                <p>Para mí, Smart Nutrition representa precisamente eso: nutrición, aprendizaje, acompañamiento y una oportunidad para crecer. Mi objetivo ahora es seguir ayudando a más personas, desarrollar nuevos líderes y continuar avanzando hacia nuestro próximo gran objetivo: Nivel de Equipo del Presidente.</p>
+                <p className="font-display text-lg italic text-[#0d7a3f]">Esta es mi historia. Y quizás el próximo capítulo pueda comenzar contigo.</p>
               </div>
             </div>
-            <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)]">
-              <img src={adrianPhoto} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-64 w-full object-cover object-top sm:h-80" data-testid="img-adrian-hero" />
+            <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)] lg:sticky lg:top-24">
+              <img src={adrianTrajeBeige} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-[460px] w-full object-cover object-top sm:h-[560px]" data-testid="img-adrian-hero" />
             </div>
           </div>
         </section>
@@ -193,6 +201,27 @@ function Home() {
               <TimelineCard image={fotoHerbalife} step="03" title="Herbalife Nutrition" text="Hoy es Asociado Independiente de Herbalife Nutrition en Guadalajara." />
             </div>
           </div>
+        </section>
+
+        <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
+          <div className="max-w-xl"><Eyebrow>Respaldo y calidad</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Tu confianza es lo<br /><em className="not-italic text-[#0d7a3f]">más importante.</em></h2></div>
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <TrustCard image={respaldoNfs} icon={<BadgeCheck size={20} />} title="Certificación NSF" text="Nuestros productos están certificados por la Fundación Nacional para la Ciencia (NSF), que avala el cumplimiento de estrictos controles de calidad." />
+            <TrustCard image={respaldoCofepris} icon={<ShieldCheck size={20} />} title="Aprobado por COFEPRIS y FDA" text="Los ingredientes de nuestros productos están aprobados por la Comisión Federal para la Protección contra Riesgos Sanitarios y la FDA de Estados Unidos." />
+            <TrustCard image={respaldoLab} icon={<FlaskConical size={20} />} title="Respaldo científico" text="Nuestra fórmula insignia está respaldada por el Consejo Consultor de Nutrición, conformado por expertos en nutrición, ciencia y salud." />
+          </div>
+          <div className="mt-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
+            <div className="relative">
+              <img src={marcaHerbalife} alt="Identidad de marca Herbalife Nutrition" className="h-72 w-full object-cover sm:h-[30rem]" data-testid="img-marca-herbalife" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#052013]/90 via-[#052013]/20 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
+                <p className="font-caps text-[10px] font-bold text-[#7be3a0]">¿Y si tú también construyes algo así?</p>
+                <h3 className="mt-2 max-w-lg font-display text-2xl leading-tight text-white sm:text-3xl">Este es el tipo de negocio que puedes construir con Herbalife Nutrition.</h3>
+                <div className="mt-5"><GoldButton href="/ingresos-desde-casa" testId="link-marca-oportunidad">Conocer la oportunidad</GoldButton></div>
+              </div>
+            </div>
+          </div>
+          <p className="mt-3 text-xs text-[#5b6b62]">Imagen de referencia de la identidad de marca global Herbalife Nutrition.</p>
         </section>
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
@@ -229,7 +258,7 @@ function Home() {
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
           <div className="mb-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
-            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-40 w-full object-cover object-top sm:h-56" data-testid="img-producto-banner-activo" />
+            <img src={productoBannerActivo} alt="Alimentación balanceada y estilo de vida activo" className="h-56 w-full object-cover object-top sm:h-80" data-testid="img-producto-banner-activo" />
           </div>
           <div className="max-w-xl"><Eyebrow>Nuestros productos</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Nutrición para cada<br /><em className="not-italic text-[#0d7a3f]">etapa de tu día.</em></h2><p className="mt-5 text-sm leading-6 text-[#5b6b62]">Explora las categorías y escríbeme para conocer disponibilidad, precio y la combinación ideal para tu objetivo.</p></div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -264,27 +293,6 @@ function Home() {
             </div>
             <div><Eyebrow>Sobre Adrian</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Primero la persona.<br /><em className="not-italic text-[#0d7a3f]">Después la opción.</em></h2><p className="mt-6 max-w-lg text-base leading-7 text-[#4b5b52]">Soy Bernard Adrián Neyra Rivery, conocido como Adrian. Soy Asociado Independiente de Herbalife Nutrition en Guadalajara. Mi trabajo es ayudarte a entender mejor tus opciones de nutrición, resolver tus dudas sin rodeos y acompañarte en el proceso — ya sea que busques mejorar tu bienestar o conocer la oportunidad de negocio.</p><p className="mt-4 max-w-lg text-base leading-7 text-[#4b5b52]">Yo mismo vivo lo que ofrezco: llevo la nutrición Herbalife como parte de mi rutina diaria y de mi entrenamiento.</p><div className="mt-8 grid gap-4 sm:grid-cols-3">{['Atención personal', 'Orientación clara', 'Seguimiento cercano'].map((item) => <div key={item} className="border-l-2 border-[#0d7a3f] pl-3 text-xs font-semibold uppercase leading-5 tracking-[.08em] text-[#16241c]">{item}</div>)}</div><div className="mt-10"><GoldButton message="Hola Adrian, quiero conocerte y saber cómo puedes orientarme." testId="link-about-whatsapp">Hablar con Adrian</GoldButton></div></div>
           </div>
-        </section>
-
-        <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
-          <div className="max-w-xl"><Eyebrow>Respaldo y calidad</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Tu confianza es lo<br /><em className="not-italic text-[#0d7a3f]">más importante.</em></h2></div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            <TrustCard image={respaldoNfs} icon={<BadgeCheck size={20} />} title="Certificación NSF" text="Nuestros productos están certificados por la Fundación Nacional para la Ciencia (NSF), que avala el cumplimiento de estrictos controles de calidad." />
-            <TrustCard image={respaldoCofepris} icon={<ShieldCheck size={20} />} title="Aprobado por COFEPRIS y FDA" text="Los ingredientes de nuestros productos están aprobados por la Comisión Federal para la Protección contra Riesgos Sanitarios y la FDA de Estados Unidos." />
-            <TrustCard image={respaldoLab} icon={<FlaskConical size={20} />} title="Respaldo científico" text="Nuestra fórmula insignia está respaldada por el Consejo Consultor de Nutrición, conformado por expertos en nutrición, ciencia y salud." />
-          </div>
-          <div className="mt-10 overflow-hidden rounded-[2rem] border border-[#e3f0e8]">
-            <div className="relative">
-              <img src={marcaHerbalife} alt="Identidad de marca Herbalife Nutrition" className="h-72 w-full object-cover sm:h-[30rem]" data-testid="img-marca-herbalife" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#052013]/90 via-[#052013]/20 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
-                <p className="font-caps text-[10px] font-bold text-[#7be3a0]">¿Y si tú también construyes algo así?</p>
-                <h3 className="mt-2 max-w-lg font-display text-2xl leading-tight text-white sm:text-3xl">Este es el tipo de negocio que puedes construir con Herbalife Nutrition.</h3>
-                <div className="mt-5"><GoldButton href="/ingresos-desde-casa" testId="link-marca-oportunidad">Conocer la oportunidad</GoldButton></div>
-              </div>
-            </div>
-          </div>
-          <p className="mt-3 text-xs text-[#5b6b62]">Imagen de referencia de la identidad de marca global Herbalife Nutrition.</p>
         </section>
 
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
@@ -330,12 +338,12 @@ function ProductCard({ image, title, text, message, testId }: { image: string; t
 
 function TrustCard({ image, icon, title, text }: { image: string; icon: ReactNode; title: string; text: string }) {
   return (
-    <div className="overflow-hidden rounded-[1.25rem] border border-[#e3f0e8] bg-white shadow-[0_10px_30px_rgba(6,48,28,.05)]">
-      <div className="h-36 overflow-hidden"><img src={image} alt={title} className="h-full w-full object-cover" /></div>
+    <div className="overflow-hidden rounded-[1.25rem] border border-[#0d7a3f]/25 bg-[#eafbf1] shadow-[0_10px_30px_rgba(6,48,28,.06)]">
+      <div className="flex h-44 items-center justify-center overflow-hidden bg-white p-2"><img src={image} alt={title} className="h-full w-full object-contain" /></div>
       <div className="p-6">
         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#0d7a3f]/10 text-[#0d7a3f]">{icon}</div>
         <h3 className="mt-4 text-sm font-bold text-[#16241c]">{title}</h3>
-        <p className="mt-2 text-xs leading-5 text-[#5b6b62]">{text}</p>
+        <p className="mt-2 text-xs leading-5 text-[#3f5b4c]">{text}</p>
       </div>
     </div>
   );
@@ -344,7 +352,7 @@ function TrustCard({ image, icon, title, text }: { image: string; icon: ReactNod
 function TimelineCard({ image, step, title, text }: { image: string; step: string; title: string; text: string }) {
   return (
     <div className="overflow-hidden rounded-[1.25rem] border border-[#0d7a3f]/25 bg-[#f0faf4] shadow-[0_10px_30px_rgba(6,48,28,.06)]">
-      <div className="h-64 overflow-hidden"><img src={image} alt={title} className="h-full w-full object-cover object-top" /></div>
+      <div className="flex h-64 items-center justify-center overflow-hidden bg-white p-2"><img src={image} alt={title} className="h-full w-full object-contain" /></div>
       <div className="p-6">
         <span className="inline-block rounded-full bg-[#0d7a3f] px-3 py-1 font-caps text-[10px] text-white">{step}</span>
         <h3 className="mt-3 text-sm font-bold text-[#16241c]">{title}</h3>
