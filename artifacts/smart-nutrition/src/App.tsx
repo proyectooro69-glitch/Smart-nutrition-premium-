@@ -11,6 +11,9 @@ const adrianPhoto = '/adrian-real.jpg';
 const adrianRutina = '/adrian-rutina.jpg';
 const heroVideo = '/hero-batido.mp4';
 const heroVideoPoster = '/hero-batido-poster.jpg';
+const fotoMilitar = '/historia-militar.jpg';
+const fotoCiencias = '/historia-ciencias.jpg';
+const fotoHerbalife = '/historia-herbalife.jpg';
 const testimonioReto = '/testimonio-reto5semanas.jpg';
 const leafLogo = '/leaf-logo.jpg';
 const productoLinea = '/producto-linea.jpg';
@@ -162,11 +165,15 @@ function Home() {
         </section>
 
         <section className="mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-20">
-          <div className="grid items-center gap-8 lg:grid-cols-[1fr_.85fr]">
+          <div className="grid items-start gap-8 lg:grid-cols-[1fr_.85fr]">
             <div>
               <Eyebrow>Bernard Adrián Neyra Rivery</Eyebrow>
               <h2 className="max-w-lg font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">La persona detrás de <em className="not-italic text-[#0d7a3f]">Smart Nutrition.</em></h2>
-              <p className="mt-4 max-w-md text-sm leading-6 text-[#4b5b52]">Asociado Independiente de Herbalife Nutrition en Guadalajara. Acompañamiento cercano, sin presión y con información clara.</p>
+              <div className="mt-6 max-w-md space-y-4 text-sm leading-6 text-[#4b5b52]">
+                <p>Antes de Herbalife, tenía malos hábitos alimenticios y un desconocimiento total acerca de una buena nutrición a nivel celular. Tenía obesidad, y cansancio y falta de energía la mayor parte del tiempo. Soy Ingeniero de Aeronáutica en Cuba y profesor.</p>
+                <p>Conocí Herbalife en México en un Club de Nutrición, me hicieron una evaluación física que me dio 7 parámetros corporales, los cuales no estaban en rangos positivos. Me invitaron a tomar la nutrición y tuve un cambio positivo en mi composición corporal: bajé 6 kilos en 21 días y me sentía con mejor digestión y energía.</p>
+                <p>En cuanto al negocio, me encantó saber que es una actividad que permite dejar herencia, generas ingresos mientras duermes y entre más personas ayudo, más me ayudo yo. Soy dueño de mi tiempo, soy mi propio jefe, y hoy genero ingresos de tres de las cinco maneras que permite la empresa. Entendí que es un negocio internacional. Vamos por el Nivel de Equipo del Presidente.</p>
+              </div>
             </div>
             <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)]">
               <img src={adrianPhoto} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-64 w-full object-cover object-top sm:h-80" data-testid="img-adrian-hero" />
@@ -175,13 +182,13 @@ function Home() {
         </section>
 
         <section className="border-y border-[#e3f0e8] bg-[#f6fbf8]">
-          <div className="mx-auto grid max-w-[1240px] divide-y divide-[#e3f0e8] px-5 sm:grid-cols-3 sm:divide-x sm:divide-y-0 lg:px-8">
-            {[['01', 'Escucha primero', 'Cada persona parte de un lugar distinto.'], ['02', 'Explica sin complicar', 'Lo importante se entiende desde el principio.'], ['03', 'Acompaña de cerca', 'La conversación continúa cuando tú lo decides.']].map(([num, title, copy]) => (
-              <div key={num} className="flex gap-4 py-6 sm:px-7 sm:first:pl-0 sm:last:pr-0">
-                <span className="font-caps text-[11px] text-[#0d7a3f]">{num}</span>
-                <div><h2 className="text-sm font-bold text-[#16241c]">{title}</h2><p className="mt-1 text-xs leading-5 text-[#5b6b62]">{copy}</p></div>
-              </div>
-            ))}
+          <div className="mx-auto max-w-[1240px] px-5 py-20 lg:px-8 lg:py-28">
+            <div className="max-w-xl"><Eyebrow>Su historia</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Un camino <em className="not-italic text-[#0d7a3f]">poco común.</em></h2></div>
+            <div className="mt-12 grid gap-6 sm:grid-cols-3">
+              <TimelineCard image={fotoMilitar} step="01" title="Militar" text="Su formación comenzó en las fuerzas armadas, en Cuba." />
+              <TimelineCard image={fotoCiencias} step="02" title="Doctor en Ciencias" text="Continuó su desarrollo profesional en el ámbito científico, en China." />
+              <TimelineCard image={fotoHerbalife} step="03" title="Herbalife Nutrition" text="Hoy es Asociado Independiente de Herbalife Nutrition en Guadalajara." />
+            </div>
           </div>
         </section>
 
@@ -318,6 +325,19 @@ function TrustCard({ image, icon, title, text }: { image: string; icon: ReactNod
       <div className="p-6">
         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#0d7a3f]/10 text-[#0d7a3f]">{icon}</div>
         <h3 className="mt-4 text-sm font-bold text-[#16241c]">{title}</h3>
+        <p className="mt-2 text-xs leading-5 text-[#5b6b62]">{text}</p>
+      </div>
+    </div>
+  );
+}
+
+function TimelineCard({ image, step, title, text }: { image: string; step: string; title: string; text: string }) {
+  return (
+    <div className="overflow-hidden rounded-[1.25rem] border border-[#e3f0e8] bg-white shadow-[0_10px_30px_rgba(6,48,28,.05)]">
+      <div className="h-48 overflow-hidden"><img src={image} alt={title} className="h-full w-full object-cover" /></div>
+      <div className="p-6">
+        <span className="font-caps text-[10px] text-[#0d7a3f]">{step}</span>
+        <h3 className="mt-2 text-sm font-bold text-[#16241c]">{title}</h3>
         <p className="mt-2 text-xs leading-5 text-[#5b6b62]">{text}</p>
       </div>
     </div>
