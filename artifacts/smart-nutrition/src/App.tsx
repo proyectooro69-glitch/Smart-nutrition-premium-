@@ -169,7 +169,7 @@ function Home() {
             <div>
               <Eyebrow>Bernard Adrián Neyra Rivery</Eyebrow>
               <h2 className="max-w-lg font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">La persona detrás de <em className="not-italic text-[#0d7a3f]">Smart Nutrition.</em></h2>
-              <div className="mt-6 max-w-md space-y-4 text-sm leading-6 text-[#4b5b52]">
+              <div className="mt-6 max-w-md space-y-4 text-justify text-sm leading-6 text-[#4b5b52]">
                 <p>Antes de Herbalife, tenía malos hábitos alimenticios y un desconocimiento total acerca de una buena nutrición a nivel celular. Tenía obesidad, y cansancio y falta de energía la mayor parte del tiempo. Soy Ingeniero de Aeronáutica en Cuba y profesor.</p>
                 <p>Conocí Herbalife en México en un Club de Nutrición, me hicieron una evaluación física que me dio 7 parámetros corporales, los cuales no estaban en rangos positivos. Me invitaron a tomar la nutrición y tuve un cambio positivo en mi composición corporal: bajé 6 kilos en 21 días y me sentía con mejor digestión y energía.</p>
                 <p>En cuanto al negocio, me encantó saber que es una actividad que permite dejar herencia, generas ingresos mientras duermes y entre más personas ayudo, más me ayudo yo. Soy dueño de mi tiempo, soy mi propio jefe, y hoy genero ingresos de tres de las cinco maneras que permite la empresa. Entendí que es un negocio internacional. Vamos por el Nivel de Equipo del Presidente.</p>
