@@ -21,11 +21,11 @@ const adrianFaceLogo = '/adrian-face-logo.jpg';
 const promoImages = [
   { src: '/promo-4-maneras.jpg', alt: 'Descubre 4 maneras de iniciar' },
   { src: '/promo-paquete-basico.jpg', alt: 'Paquete básico con membresía — 25% de descuento' },
+  { src: '/promo-paquete-intermedio1.jpg', alt: 'Paquete intermedio #1 — 35% de descuento' },
   { src: '/promo-paquete-intermedio2.jpg', alt: 'Paquete intermedio #2 — 35% de descuento' },
   { src: '/promo-paquete-acelerador.jpg', alt: 'Paquete acelerador — 42% de descuento' },
   { src: '/promo-kit-inicio.jpg', alt: 'Kit de inicio Herbalife' },
   { src: '/promo-decisiones.jpg', alt: 'Tus decisiones definen tu futuro' },
-  { src: '/promo-12-personas.jpg', alt: 'Estoy buscando a 12 personas para mejorar su vida' },
 ];
 const productoProteina = '/producto-proteina.jpg';
 const productoLiftoff = '/producto-liftoff.jpg';
