@@ -19,10 +19,11 @@ const testimonioReto = '/testimonio-reto5semanas.jpg';
 const leafLogo = '/leaf-logo.jpg';
 const adrianFaceLogo = '/adrian-face-logo.jpg';
 const promoImages = [
-  { src: '/promo-paquete-basico.jpg', alt: 'Paquete básico con membresía — 25% de descuento' },
-  { src: '/promo-kit-inicio.jpg', alt: 'Kit de inicio Herbalife' },
-  { src: '/promo-paquete-acelerador.jpg', alt: 'Paquete acelerador — 42% de descuento' },
   { src: '/promo-4-maneras.jpg', alt: 'Descubre 4 maneras de iniciar' },
+  { src: '/promo-paquete-basico.jpg', alt: 'Paquete básico con membresía — 25% de descuento' },
+  { src: '/promo-paquete-intermedio2.jpg', alt: 'Paquete intermedio #2 — 35% de descuento' },
+  { src: '/promo-paquete-acelerador.jpg', alt: 'Paquete acelerador — 42% de descuento' },
+  { src: '/promo-kit-inicio.jpg', alt: 'Kit de inicio Herbalife' },
   { src: '/promo-decisiones.jpg', alt: 'Tus decisiones definen tu futuro' },
   { src: '/promo-12-personas.jpg', alt: 'Estoy buscando a 12 personas para mejorar su vida' },
 ];
@@ -72,7 +73,7 @@ function Header() {
     <header className="relative z-40 border-b border-[#e3f0e8] bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1240px] items-center justify-between px-5 py-4 lg:px-8">
         <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-3" data-testid="link-brand">
-          <img src={adrianFaceLogo} alt="Bernard Adrián Neyra Rivery" className="h-11 w-11 rounded-full object-cover border border-[#0d7a3f]/25" />
+          <img src={adrianFaceLogo} alt="Bernard Adrián Neyra Rivery" className="h-16 w-16 rounded-full object-cover border-2 border-[#0d7a3f]/25" />
           <div className="leading-none">
             <p className="font-caps text-[10px] font-bold tracking-[.14em] text-[#0d7a3f]">Havana-Guadalajara</p>
             <p className="mt-1 text-[10px] text-[#5b6b62]">Bernard Adrián Neyra Rivery · Smart Nutrition</p>
@@ -122,7 +123,7 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-3 text-sm text-[#cfe4d8]">
           <p className="font-caps text-[10px] font-bold text-white">Contacto</p>
-          <a href="https://maps.google.com/?q=Ignacio+Bernal+4286,+Rancho+Nuevo,+Guadalajara,+Jalisco" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition-colors hover:text-white" data-testid="link-footer-address"><MapPin size={16} className="shrink-0 text-[#3fbf7f]" /> Club Havana, Ignacio Bernal 4286, Rancho Nuevo, Guadalajara, Jalisco</a>
+          <a href="https://maps.google.com/?q=Ignacio+Bernal+4286,+Rancho+Nuevo,+Guadalajara,+Jalisco" target="_blank" rel="noreferrer" className="flex items-start gap-2 transition-colors hover:text-white" data-testid="link-footer-address"><MapPin size={16} className="mt-0.5 shrink-0 text-[#3fbf7f]" /> <span>Club Havana Guadalajara<br />Ignacio Bernal 4286, Rancho Nuevo, Guadalajara, Jalisco</span></a>
           <a href={whatsappHref('Hola Adrian, quiero comenzar una conversación.')} target="_blank" rel="noreferrer" className="flex items-center gap-2 font-semibold transition-colors hover:text-white" data-testid="link-footer-phone"><Phone size={16} className="shrink-0 text-[#3fbf7f]" /> +52 33 2948 2640</a>
         </div>
         <div className="flex flex-col gap-3 text-sm text-[#cfe4d8]">
@@ -183,7 +184,7 @@ function Home() {
           <div className="grid items-start gap-8 lg:grid-cols-[1fr_.85fr]">
             <div>
               <Eyebrow>Bernard Adrián Neyra Rivery</Eyebrow>
-              <h2 className="max-w-lg font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">La persona detrás de <em className="not-italic text-[#0d7a3f]">Smart Nutrition.</em></h2>
+              <h2 className="max-w-lg font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">Mi antes y después <em className="not-italic text-[#0d7a3f]">con Herbalife.</em></h2>
               <div className="mt-6 max-w-md space-y-4 text-justify text-sm leading-6 text-[#4b5b52]">
                 <p className="font-display text-lg italic text-[#0d7a3f]">De buscar una solución para mí a descubrir una nueva forma de vivir.</p>
                 <p>Antes de conocer Herbalife®, tenía malos hábitos alimenticios, poca energía y vivía con obesidad. Como Ingeniero en Aeronáutica y profesor, siempre he tenido la inquietud de entender cómo funcionan las cosas y buscar maneras de mejorar.</p>
@@ -196,8 +197,14 @@ function Home() {
                 <p className="font-display text-lg italic text-[#0d7a3f]">Esta es mi historia. Y quizás el próximo capítulo pueda comenzar contigo.</p>
               </div>
             </div>
-            <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)] lg:mt-16">
-              <img src={adrianTrajeBeige} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-auto w-full object-cover" data-testid="img-adrian-hero" />
+            <div className="flex flex-col gap-6 lg:mt-16">
+              <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)]">
+                <img src={testimonioReto} alt="Antes y después de Adrian con Herbalife" className="w-full object-cover" data-testid="img-antes-despues" />
+              </div>
+              <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(6,48,28,.08)]">
+                <div className="bg-[#0d7a3f] px-5 py-3"><p className="font-caps text-[10px] font-bold text-white">Mi después con los productos de Herbalife</p></div>
+                <img src={adrianTrajeBeige} alt="Bernard Adrián Neyra Rivery, Asociado Independiente de Herbalife Nutrition" className="h-auto w-full object-cover" data-testid="img-adrian-hero" />
+              </div>
             </div>
           </div>
         </section>
@@ -251,14 +258,11 @@ function Home() {
         <section className="border-y border-[#e3f0e8] bg-[#f6fbf8]">
           <div className="mx-auto px-5 py-20 lg:px-8 lg:py-28">
             <div className="max-w-xl"><Eyebrow>Resultados reales</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Si funciona.<br /><em className="not-italic text-[#0d7a3f]">Si decides disciplinarte.</em></h2></div>
-            <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
-              <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] shadow-[0_20px_50px_rgba(0,0,0,.3)]">
-                <img src={testimonioReto} alt="Reto de 5 semanas de Adrian: antes, durante y construcción actual" className="w-full object-cover" data-testid="img-testimonio-reto" />
-              </div>
-              <div className="glass rounded-[1.5rem] p-8">
+            <div className="mt-12 mx-auto max-w-2xl">
+              <div className="glass rounded-[1.5rem] p-8 text-center">
                 <p className="font-display text-2xl italic leading-snug text-[#16241c]">"Participé en el Reto de 5 Semanas de FitCamp Guadalajara y esto fue lo que logré con disciplina, entrenamiento y la nutrición Herbalife como base. No es magia, es constancia — y yo puedo acompañarte a empezar tu propio proceso."</p>
                 <p className="mt-5 text-sm font-bold uppercase tracking-[.1em] text-[#0d7a3f]">Bernard Adrián Neyra Rivery</p>
-                <div className="mt-7"><GoldButton message="Hola Adrian, vi tu transformación en el Reto de 5 Semanas y quiero empezar mi propio proceso." testId="link-testimonio-whatsapp">¿Quieres tu propio antes y después?</GoldButton></div>
+                <div className="mt-7 flex justify-center"><GoldButton message="Hola Adrian, vi tu transformación en el Reto de 5 Semanas y quiero empezar mi propio proceso." testId="link-testimonio-whatsapp">¿Quieres tu propio antes y después?</GoldButton></div>
               </div>
             </div>
           </div>
