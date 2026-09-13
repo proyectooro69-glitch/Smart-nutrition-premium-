@@ -406,17 +406,6 @@ function WellnessPage() {
         <span className="inline-flex items-center gap-3 rounded-full bg-[#0d7a3f] px-5 py-3 text-[11px] font-bold uppercase tracking-[.14em] text-white transition-all group-hover:-translate-y-0.5 group-hover:bg-[#0a5f31]">Ver catálogo completo<ArrowUpRight size={15} /></span>
       </a>
     </section>
-    <section className="mx-auto max-w-[1240px] px-5 pb-10 lg:px-8">
-      <div className="glass overflow-hidden rounded-[2rem] p-3 sm:p-5">
-        <div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] bg-white">
-          <video className="aspect-video w-full object-cover" controls preload="metadata" playsInline poster={adrianPhoto} data-testid="video-wellness-explainer"><source src={opportunityVideo} type="video/mp4" />Tu navegador no soporta la reproducción de video.</video>
-        </div>
-        <div className="px-3 pb-3 pt-6 sm:px-4">
-          <Eyebrow>Video explicativo</Eyebrow>
-          <h2 className="max-w-2xl font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">Todo sobre Herbalife Nutrition, explicado directo.</h2>
-        </div>
-      </div>
-    </section>
     <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProductCard image={productoBatido} title="Batidos y control de peso" text="Nutrición balanceada en pocas calorías, para reemplazar una comida sin dejar de nutrirte." message="Hola Adrian, quiero información sobre los batidos y control de peso." testId="card-wellness-batidos" />
