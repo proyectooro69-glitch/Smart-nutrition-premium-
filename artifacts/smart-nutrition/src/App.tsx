@@ -17,6 +17,15 @@ const fotoCiencias = '/historia-ciencias.jpg';
 const fotoHerbalife = '/historia-herbalife.jpg';
 const testimonioReto = '/testimonio-reto5semanas.jpg';
 const leafLogo = '/leaf-logo.jpg';
+const adrianFaceLogo = '/adrian-face-logo.jpg';
+const promoImages = [
+  { src: '/promo-paquete-basico.jpg', alt: 'Paquete básico con membresía — 25% de descuento' },
+  { src: '/promo-kit-inicio.jpg', alt: 'Kit de inicio Herbalife' },
+  { src: '/promo-paquete-acelerador.jpg', alt: 'Paquete acelerador — 42% de descuento' },
+  { src: '/promo-4-maneras.jpg', alt: 'Descubre 4 maneras de iniciar' },
+  { src: '/promo-decisiones.jpg', alt: 'Tus decisiones definen tu futuro' },
+  { src: '/promo-12-personas.jpg', alt: 'Estoy buscando a 12 personas para mejorar su vida' },
+];
 const productoProteina = '/producto-proteina.jpg';
 const productoLiftoff = '/producto-liftoff.jpg';
 const productoBatido = '/producto-batido.jpg';
@@ -56,18 +65,20 @@ function Header() {
     { href: '/', label: 'Inicio' },
     { href: '/salud-y-bienestar', label: 'Salud y bienestar' },
     { href: '/ingresos-desde-casa', label: 'Ingresos desde casa' },
+    { href: '/promociones', label: 'Promociones' },
+    { href: '/testimonios', label: 'Testimonios' },
   ];
   return (
     <header className="relative z-40 border-b border-[#e3f0e8] bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1240px] items-center justify-between px-5 py-4 lg:px-8">
         <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-3" data-testid="link-brand">
-          <img src={leafLogo} alt="Smart Nutrition" className="h-10 w-10 rounded-full object-cover border border-[#0d7a3f]/20" />
+          <img src={adrianFaceLogo} alt="Bernard Adrián Neyra Rivery" className="h-11 w-11 rounded-full object-cover border border-[#0d7a3f]/25" />
           <div className="leading-none">
-            <p className="font-caps text-[10px] font-bold text-[#0d7a3f]">Smart Nutrition</p>
-            <p className="mt-1 text-[10px] text-[#5b6b62]">Adrian · Guadalajara</p>
+            <p className="font-caps text-[10px] font-bold tracking-[.14em] text-[#0d7a3f]">Havana-Guadalajara</p>
+            <p className="mt-1 text-[10px] text-[#5b6b62]">Bernard Adrián Neyra Rivery · Smart Nutrition</p>
           </div>
         </Link>
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Navegación principal">
+        <nav className="hidden items-center gap-6 md:flex" aria-label="Navegación principal">
           {links.map((link) => (
             <Link key={link.href} href={link.href} data-testid={`link-nav-${link.label.toLowerCase().replaceAll(' ', '-')}`} className={`relative py-2 text-[11px] font-semibold uppercase tracking-[.13em] transition-colors hover:text-[#0d7a3f] ${location === link.href ? 'text-[#0d7a3f]' : 'text-[#3d4a42]'}`}>
               {link.label}
@@ -250,13 +261,6 @@ function Home() {
                 <div className="mt-7"><GoldButton message="Hola Adrian, vi tu transformación en el Reto de 5 Semanas y quiero empezar mi propio proceso." testId="link-testimonio-whatsapp">¿Quieres tu propio antes y después?</GoldButton></div>
               </div>
             </div>
-            <div className="mt-6 flex flex-col items-start gap-4 rounded-[1.5rem] border border-dashed border-white/25 p-7 sm:flex-row sm:items-center sm:justify-between">
-              <div className="max-w-lg">
-                <p className="font-caps text-[10px] font-bold text-[#0d7a3f]">Próximamente aquí</p>
-                <p className="mt-2 text-sm leading-6 text-[#4b5b52]">Este espacio está reservado para más testimonios reales de clientes de Adrian, con su autorización. Si ya viviste un cambio con Smart Nutrition, cuéntanoslo.</p>
-              </div>
-              <GoldButton message="Hola Adrian, quiero compartir mi testimonio con Smart Nutrition." testId="link-testimonio-nuevo">Compartir mi testimonio</GoldButton>
-            </div>
           </div>
         </section>
 
@@ -429,6 +433,38 @@ function WellnessPage() {
   </main></Layout>;
 }
 
+function PromotionsPage() {
+  return <Layout><Meta title="Promociones" description="Conoce las promociones y paquetes vigentes de Smart Nutrition con Herbalife Nutrition." /><main>
+    <PageIntro eyebrow="Ofertas vigentes" title={<>Promociones y<br /><em className="not-italic text-[#0d7a3f]">paquetes de inicio.</em></>} copy="Estas son las promociones activas de Smart Nutrition. Escríbeme por WhatsApp para confirmar disponibilidad y resolver cualquier duda antes de decidir." />
+    <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {promoImages.map((promo) => (
+          <a key={promo.src} href={whatsappHref(`Hola Adrian, vi la promoción "${promo.alt}" y quiero más información.`)} target="_blank" rel="noreferrer" data-testid={`link-promo-${promo.src.replace(/[^a-z0-9]/gi, '')}`} className="group overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] bg-white shadow-[0_10px_30px_rgba(6,48,28,.06)] transition-transform duration-300 hover:-translate-y-1">
+            <img src={promo.src} alt={promo.alt} className="w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="flex items-center justify-between p-5"><span className="text-xs font-bold uppercase tracking-[.1em] text-[#0d7a3f]">Preguntar por esta promoción</span><ArrowUpRight size={15} className="text-[#0d7a3f]" /></div>
+          </a>
+        ))}
+      </div>
+      <p className="mt-6 text-xs text-[#5b6b62]">Las promociones pueden cambiar sin previo aviso. Confirma vigencia y condiciones directamente con Adrian.</p>
+    </section>
+    <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8"><Link href="/" data-testid="link-promotions-back" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.14em] text-[#0d7a3f]"><ArrowLeft size={15} /> Volver al inicio</Link></section>
+  </main></Layout>;
+}
+
+function TestimoniosPage() {
+  return <Layout><Meta title="Testimonios" description="Experiencias reales de la comunidad de Smart Nutrition con Herbalife Nutrition." /><main>
+    <PageIntro eyebrow="Historias reales" title={<>Testimonios de<br /><em className="not-italic text-[#0d7a3f]">nuestra comunidad.</em></>} copy="Muy pronto vas a encontrar aquí las experiencias reales de quienes ya viven su transformación con Smart Nutrition." />
+    <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32">
+      <div className="rounded-[1.5rem] border border-dashed border-[#0d7a3f]/30 bg-[#f6fbf8] p-10 text-center">
+        <p className="font-caps text-[10px] font-bold text-[#0d7a3f]">Próximamente</p>
+        <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-[#4b5b52]">Estamos reuniendo los testimonios de nuestra comunidad. Si ya viviste un cambio con Smart Nutrition, cuéntanoslo.</p>
+        <div className="mt-6 flex justify-center"><GoldButton message="Hola Adrian, quiero compartir mi testimonio con Smart Nutrition." testId="link-testimonios-compartir">Compartir mi testimonio</GoldButton></div>
+      </div>
+    </section>
+    <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8"><Link href="/" data-testid="link-testimonios-back" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.14em] text-[#0d7a3f]"><ArrowLeft size={15} /> Volver al inicio</Link></section>
+  </main></Layout>;
+}
+
 function ProductDetail() {
   const { id } = useParams<{ id: string }>();
   return <Layout><Meta title="Producto en revisión" description="Este producto aún no está disponible en el catálogo verificado de Smart Nutrition." /><main className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-36"><Link href="/salud-y-bienestar" data-testid="link-product-back" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.14em] text-[#0d7a3f]"><ArrowLeft size={15} /> Volver al catálogo</Link><div className="mt-20 grid gap-12 lg:grid-cols-[.7fr_1.3fr] lg:items-end"><div className="flex h-40 w-40 items-center justify-center rounded-full border border-[#0d7a3f]/30 bg-[#f6fbf8] text-[#0d7a3f]"><HeartHandshake size={42} strokeWidth={1.2} /></div><div><Eyebrow>Referencia {id ? `#${id}` : ''}</Eyebrow><h1 className="font-display text-5xl leading-tight text-[#16241c] sm:text-7xl">Producto aún<br /><em className="not-italic text-[#0d7a3f]">no publicado.</em></h1><p className="mt-7 max-w-xl text-base leading-7 text-[#4b5b52]">No quiero mostrarte información incompleta. Este producto todavía no forma parte del catálogo verificado de Smart Nutrition. Si tienes un nombre específico en mente, escríbeme y lo revisamos juntos.</p><div className="mt-9"><GoldButton message={`Hola Adrian, quiero consultar el producto ${id ?? ''}.`} testId="link-product-whatsapp">Consultar producto</GoldButton></div></div></div></main></Layout>;
@@ -439,7 +475,7 @@ function NotFound() {
 }
 
 function Router() {
-  return <ErrorBoundary resetKey={useLocation()[0]}><Switch><Route path="/" component={Home} /><Route path="/ingresos-desde-casa" component={IncomePage} /><Route path="/salud-y-bienestar" component={WellnessPage} /><Route path="/producto/:id" component={ProductDetail} /><Route component={NotFound} /></Switch></ErrorBoundary>;
+  return <ErrorBoundary resetKey={useLocation()[0]}><Switch><Route path="/" component={Home} /><Route path="/ingresos-desde-casa" component={IncomePage} /><Route path="/salud-y-bienestar" component={WellnessPage} /><Route path="/promociones" component={PromotionsPage} /><Route path="/testimonios" component={TestimoniosPage} /><Route path="/producto/:id" component={ProductDetail} /><Route component={NotFound} /></Switch></ErrorBoundary>;
 }
 
 function App() {
