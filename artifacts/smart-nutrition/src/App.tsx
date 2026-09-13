@@ -255,19 +255,6 @@ function Home() {
           </div>
         </section>
 
-        <section className="border-y border-[#e3f0e8] bg-[#f6fbf8]">
-          <div className="mx-auto px-5 py-20 lg:px-8 lg:py-28">
-            <div className="max-w-xl"><Eyebrow>Resultados reales</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Si funciona.<br /><em className="not-italic text-[#0d7a3f]">Si decides disciplinarte.</em></h2></div>
-            <div className="mt-12 mx-auto max-w-2xl">
-              <div className="glass rounded-[1.5rem] p-8 text-center">
-                <p className="font-display text-2xl italic leading-snug text-[#16241c]">"Participé en el Reto de 5 Semanas de FitCamp Guadalajara y esto fue lo que logré con disciplina, entrenamiento y la nutrición Herbalife como base. No es magia, es constancia — y yo puedo acompañarte a empezar tu propio proceso."</p>
-                <p className="mt-5 text-sm font-bold uppercase tracking-[.1em] text-[#0d7a3f]">Bernard Adrián Neyra Rivery</p>
-                <div className="mt-7 flex justify-center"><GoldButton message="Hola Adrian, vi tu transformación en el Reto de 5 Semanas y quiero empezar mi propio proceso." testId="link-testimonio-whatsapp">¿Quieres tu propio antes y después?</GoldButton></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8 lg:py-32">
           <div className="max-w-xl"><Eyebrow>Respaldo y calidad</Eyebrow><h2 className="font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Tu confianza es lo<br /><em className="not-italic text-[#0d7a3f]">más importante.</em></h2></div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
