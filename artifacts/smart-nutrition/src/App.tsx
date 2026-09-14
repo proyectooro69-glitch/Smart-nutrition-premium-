@@ -377,6 +377,7 @@ function IncomePage() {
      <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32"><div className="glass overflow-hidden rounded-[2rem] p-3 sm:p-5"><div className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] bg-white"><video className="aspect-video w-full object-cover" controls preload="metadata" playsInline poster={adrianPhoto} data-testid="video-income-opportunity"><source src={opportunityVideo} type="video/mp4" />Tu navegador no soporta la reproducción de video.</video></div><div className="px-3 pb-3 pt-6 sm:px-4"><Eyebrow>Video de introducción</Eyebrow><h2 className="max-w-2xl font-display text-3xl leading-tight text-[#16241c] sm:text-4xl">Conoce la oportunidad desde una conversación directa.</h2><p className="mt-3 max-w-2xl text-sm leading-6 text-[#5b6b62]">Reproduce el video cuando quieras. Después, si te quedan preguntas, Adrian puede orientarte personalmente.</p></div></div></section>
     <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32"><div className="grid gap-5 lg:grid-cols-3">{[['01', 'Conoce el modelo', 'Una introducción a la forma de trabajo independiente y a las responsabilidades que implica.'], ['02', 'Haz tus preguntas', 'No necesitas llegar con experiencia. La conversación empieza desde lo que tú quieres entender.'], ['03', 'Decide a tu ritmo', 'No hay una decisión que tomar en esta página. Primero conoce, después elige.']].map(([number, title, copy]) => <div key={number} className="border-t-2 border-[#0d7a3f] pt-5"><span className="font-caps text-[10px] text-[#0d7a3f]">{number}</span><h2 className="mt-10 font-display text-3xl text-[#16241c]">{title}</h2><p className="mt-3 text-sm leading-6 text-[#5b6b62]">{copy}</p></div>)}</div></section>
     <section className="border-y border-[#e3f0e8] bg-[#f6fbf8]"><div className="mx-auto grid max-w-[1240px] gap-12 px-5 py-20 lg:grid-cols-[1fr_.8fr] lg:px-8 lg:py-28"><div><Eyebrow>Transparencia primero</Eyebrow><h2 className="max-w-lg font-display text-4xl leading-tight text-[#16241c] sm:text-5xl">Una oportunidad no es una promesa de <em className="not-italic text-[#0d7a3f]">resultados.</em></h2><p className="mt-6 max-w-lg text-base leading-7 text-[#4b5b52]">Los resultados dependen de muchos factores, incluyendo el esfuerzo, el tiempo y las habilidades de cada persona. Por eso prefiero explicarte el proceso y que tú valores si encaja contigo.</p></div><div className="glass rounded-2xl p-7"><Sparkles size={22} className="text-[#0d7a3f]" /><h3 className="mt-7 text-lg font-bold text-[#16241c]">¿Quieres conocer los detalles?</h3><p className="mt-3 text-sm leading-6 text-[#5b6b62]">Mándame un mensaje. Te contaré cómo es mi experiencia y resolveré tus dudas con calma.</p><div className="mt-7"><GoldButton message="Hola Adrian, quiero conocer más sobre cómo ser Asociado Independiente de Herbalife." testId="link-income-whatsapp">Conversar con Adrian</GoldButton></div></div></div></section>
+    <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8"><IncomeDisclaimer /></section>
     <section className="mx-auto max-w-[1240px] px-5 py-24 lg:px-8"><Link href="/" data-testid="link-income-back" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.14em] text-[#0d7a3f]"><ArrowLeft size={15} /> Volver al inicio</Link></section>
   </main></Layout>;
 }
@@ -413,9 +414,18 @@ function WellnessPage() {
   </main></Layout>;
 }
 
+function IncomeDisclaimer() {
+  return (
+    <div className="rounded-[1.25rem] border border-[#0d7a3f]/20 bg-[#f6fbf8] p-6">
+      <p className="text-xs italic leading-6 text-[#4b5b52]">"Los ingresos presentados corresponden exclusivamente al expositor y no son típicos o promedio. Estos logros requieren trabajo, dedicación y esfuerzo constante. Para conocer los ingresos promedio, consulte la Declaración de Ganancia Bruta Promedio pagada por Herbalife Nutrition en Herbalife.com y MyHerbalife.com, si aplica para su país."</p>
+    </div>
+  );
+}
+
 function PromotionsPage() {
   return <Layout><Meta title="Promociones" description="Conoce las promociones y paquetes vigentes de Smart Nutrition con Herbalife Nutrition." /><main>
     <PageIntro eyebrow="Ofertas vigentes" title={<>Promociones y<br /><em className="not-italic text-[#0d7a3f]">paquetes de inicio.</em></>} copy="Estas son las promociones activas de Smart Nutrition. Escríbeme por WhatsApp para confirmar disponibilidad y resolver cualquier duda antes de decidir." />
+    <section className="mx-auto max-w-[1240px] px-5 pb-10 lg:px-8"><IncomeDisclaimer /></section>
     <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32">
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {promoImages.map((promo) => (
@@ -432,12 +442,25 @@ function PromotionsPage() {
 }
 
 function TestimoniosPage() {
+  const videos = [
+    { id: '1WyKoPpiGlqg6uFR-f1EkIw5GnTwmrxp0', title: 'Testimonio en video 1' },
+    { id: '1zio5Ocisokrlq17r52K0OYfspmAU-_bj', title: 'Testimonio en video 2' },
+  ];
   return <Layout><Meta title="Testimonios" description="Experiencias reales de la comunidad de Smart Nutrition con Herbalife Nutrition." /><main>
-    <PageIntro eyebrow="Historias reales" title={<>Testimonios de<br /><em className="not-italic text-[#0d7a3f]">nuestra comunidad.</em></>} copy="Muy pronto vas a encontrar aquí las experiencias reales de quienes ya viven su transformación con Smart Nutrition." />
+    <PageIntro eyebrow="Historias reales" title={<>Testimonios de<br /><em className="not-italic text-[#0d7a3f]">nuestra comunidad.</em></>} copy="Estas son experiencias reales de personas que han vivido su transformación con Smart Nutrition." />
+    <section className="mx-auto max-w-[1240px] px-5 pb-16 lg:px-8">
+      <div className="grid gap-8 sm:grid-cols-2">
+        {videos.map((video) => (
+          <div key={video.id} className="overflow-hidden rounded-[1.5rem] border border-[#e3f0e8] bg-white shadow-[0_10px_30px_rgba(6,48,28,.06)]">
+            <div className="aspect-video w-full"><iframe src={`https://drive.google.com/file/d/${video.id}/preview`} title={video.title} className="h-full w-full" allow="autoplay" data-testid={`video-testimonio-${video.id}`} /></div>
+          </div>
+        ))}
+      </div>
+    </section>
     <section className="mx-auto max-w-[1240px] px-5 pb-24 lg:px-8 lg:pb-32">
       <div className="rounded-[1.5rem] border border-dashed border-[#0d7a3f]/30 bg-[#f6fbf8] p-10 text-center">
-        <p className="font-caps text-[10px] font-bold text-[#0d7a3f]">Próximamente</p>
-        <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-[#4b5b52]">Estamos reuniendo los testimonios de nuestra comunidad. Si ya viviste un cambio con Smart Nutrition, cuéntanoslo.</p>
+        <p className="font-caps text-[10px] font-bold text-[#0d7a3f]">¿Tienes tu propia historia?</p>
+        <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-[#4b5b52]">Si ya viviste un cambio con Smart Nutrition, cuéntanoslo y compártelo aquí.</p>
         <div className="mt-6 flex justify-center"><GoldButton message="Hola Adrian, quiero compartir mi testimonio con Smart Nutrition." testId="link-testimonios-compartir">Compartir mi testimonio</GoldButton></div>
       </div>
     </section>
